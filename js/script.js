@@ -9,3 +9,5 @@ $(".page-scroll").on("click", function (e) {
 
   e.preventDefault();
 });
+
+const imgProjek = document.querySelector("img-projek");
