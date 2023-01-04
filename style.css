@@ -1,0 +1,28 @@
+.jumbotron {
+  padding-top: 5rem;
+  background-color: #b7c1d2;
+}
+
+#projects {
+  background-color: #b7c1d2;
+  padding-top: 2rem;
+}
+
+footer {
+  background-color: #b7c1d2;
+  padding: 3px;
+}
+
+section {
+  padding-top: 5rem;
+}
+
+body {
+  overflow-x: hidden;
+  max-width: 100%;
+}
+
+html {
+  overflow-x: hidden;
+  max-width: 100%;
+}
