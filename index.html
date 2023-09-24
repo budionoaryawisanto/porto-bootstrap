@@ -13,7 +13,7 @@
     <!-- navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow fixed-top">
       <div class="container">
-        <a class="navbar-brand" href="#">Budiono Arya Wisanto</a>
+        <div class="navbar-brand" >Budiono Arya Wisanto</div>
         
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -45,7 +45,12 @@
     <!-- jumbotron -->
     <section class="jumbotron text-center">
         <img src="img/profil.png" alt="Budiono Arya Wisanto" width="200px" height="200px" class="rounded-circle img-thumbnail">
-        <h1 class="display-4">Budiono Arya Wisanto</h1>
+        <form class="form mt-2">
+          <label for="fname">Nama:</label><br>
+          <input type="text" id="fname" class="fname" name="fname" value=""><br>
+          <input class="mt-2" type="submit" value="Submit" onclick="changeName()">
+        </form> 
+        <h1 class="display-4 name">Budiono Arya Wisanto</h1>
         <p class="lead">College Student | Frontend Developer</p>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#fff" fill-opacity="1" d="M0,160L40,165.3C80,171,160,181,240,160C320,139,400,85,480,90.7C560,96,640,160,720,170.7C800,181,880,139,960,101.3C1040,64,1120,32,1200,37.3C1280,43,1360,85,1400,106.7L1440,128L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z"></path></svg>
       </section>
@@ -121,6 +126,15 @@
 
     <script src="js/jquery-3.6.0.min.js"></script>
     <script src="js/script.js"></script>
+    <script>
+      const nama = document.querySelectorAll('name');
+      const fname = document.querySelectorAll('fname');
+      function changeName(e) {
+        nama.innerHTML = fname.value;
+        e.preventDefault();
+      }
+      console.log(fname.value)
+    </script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
   </body>

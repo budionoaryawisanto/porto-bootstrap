@@ -9,5 +9,6 @@ $(".page-scroll").on("click", function (e) {
 
   e.preventDefault();
 });
+const form = document.querySelectorAll('form');
 
-const imgProjek = document.querySelector("img-projek");
+
